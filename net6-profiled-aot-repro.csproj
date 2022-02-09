@@ -9,5 +9,9 @@
     <ApplicationId>com.companyname.net6_profiled_aot_repro</ApplicationId>
     <ApplicationVersion>1</ApplicationVersion>
     <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+    <AProfUtilToolPath>$(MSBuildThisFileDirectory)binaries/</AProfUtilToolPath>
   </PropertyGroup>
+  <ItemGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <AndroidNativeLibrary Include="android-*/libmono-profiler-aot.so')" />
+  </ItemGroup>
 </Project>
