@@ -1,4 +1,4 @@
-namespace net6_profiled_aot_repro;
+namespace HelloAndroid;
 
 [Activity(Label = "@string/app_name", MainLauncher = true)]
 public class MainActivity : Activity
