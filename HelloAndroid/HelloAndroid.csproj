@@ -10,6 +10,9 @@
     <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
     <AProfUtilToolPath>$(MSBuildThisFileDirectory)binaries/</AProfUtilToolPath>
   </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HelloLibrary\HelloLibrary.csproj" />
+  </ItemGroup>
   <ItemGroup Condition=" '$(Configuration)' == 'Debug' ">
     <AndroidNativeLibrary Include="android-*/libmono-profiler-aot.so')" />
   </ItemGroup>
