@@ -9,6 +9,11 @@ I recorded `custom.aprof` via a `Debug` build:
 > dotnet build HelloAndroid/HelloAndroid.csproj -t:FinishAotProfiling
 ```
 
+This makes use of:
+
+* https://github.com/jonathanpeppers/Mono.Profiler.Android
+* https://www.nuget.org/packages/Mono.AotProfiler.Android
+
 To run using `custom.aprof`, run a `Release` build:
 
 ```dotnetcli

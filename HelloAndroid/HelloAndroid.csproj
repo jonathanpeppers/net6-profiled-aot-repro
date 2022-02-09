@@ -8,7 +8,6 @@
     <ApplicationId>com.companyname.HelloAndroid</ApplicationId>
     <ApplicationVersion>1</ApplicationVersion>
     <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
-    <AProfUtilToolPath>$(MSBuildThisFileDirectory)binaries/</AProfUtilToolPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <RunAOTCompilation>true</RunAOTCompilation>
@@ -20,7 +19,7 @@
     <ProjectReference Include="..\HelloLibrary\HelloLibrary.csproj" />
     <AndroidAotProfile Include="custom.aprof" />
   </ItemGroup>
-  <ItemGroup Condition=" '$(Configuration)' == 'Debug' ">
-    <AndroidNativeLibrary Include="android-*/libmono-profiler-aot.so')" />
+  <ItemGroup>
+    <PackageReference Include="Mono.AotProfiler.Android" Version="6.0.0-preview1" />
   </ItemGroup>
 </Project>
